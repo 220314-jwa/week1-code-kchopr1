@@ -1,7 +1,8 @@
+// this is an integor with score as an object which is equal to 80. We will be determining if the score is equal to 80 in the condition below
 int score = 80;
-
+// this is an integor with score as an object which is equal to 80
 String result;
-
+//below is an If statement which has checking if score has an equal value of 80. It is checking if this condition is true if yes then the result will be you passed and then else statement describes scenarios if the condition is not true the present a different result.
 if (score == 80) {
 	result = "You passed!";
 } else if (score > 80) {
@@ -9,5 +10,5 @@ if (score == 80) {
 } else {
 	result = "You did not pass. Try again!";
 }
-
+// priting out the result in console since it is exactly equals to 80 the  console will show "You passed"
 System.out.println(result);
