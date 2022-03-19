@@ -1,19 +1,21 @@
+// this is the main method in the code below we are first setting a method below before giving everything value such as we gave foodtype value later on after calling the parameter getFoodTypesin the method. then we also used switch statement to test out different case 
+
 public static void main(String[] args) {
 	String[] foodTypes = getFoodTypes();
 	String myType = foodTypes[2];
-
+// below we are calling the foodtype that we gave value to above
 	String[] foodsOfMyType = getFoodsByType(myType);
-	
+	// we used enhanced for loop to iterate through items in an array
 	for (String food : foodsOfMyType) {
 		System.out.println(food);
 	}
 }
-
+// below we are calling the method again but with different parameter  and giving the foodTypes a string value
 public static String[] getFoodTypes() {
 	String[] foodTypes = {"breakfast","lunch","dinner","dessert","snack"};
 	return foodTypes;
 }
-
+// switch statement allows us to run the test case. The result we will be getting is the value set for food[2] for every case.
 public static String[] getFoodsByType(String type) {
 	String[] foods = new String[3];
 
