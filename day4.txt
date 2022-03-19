@@ -1,9 +1,12 @@
+// javalin is a framework for Java and allows you to handle HTTP requests
+//below is the main method for java
 public class Main {
 	public static void main(String[] args) {
+	// below is main method for Javalin
 		Javalin app = Javalin.create();
 
 		app.start();
-
+// by using the get method to be able to get requests from the server
 		app.get("foods", ctx -> {
 			Food myFood = new Food("carrots", "vegetable");
 			ctx.result("You got: " + myFood.name);
