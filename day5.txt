@@ -1,9 +1,12 @@
+// this is HTML sysntax used in the code below which is HyperText markup language it follows the normal format of html , head , and body with closing tags there is some javalin used as well after the the html
 <html>
 	<head>
 		<title>Daily Code Review</title>
 	</head>
 	<body>
+	//below is the heading tag
 		<h1>Cook your food!</h1>
+		//below is a form with a submit button
 		<form action="http://localhost:8080/cook">
 			<label for="foodName">Food Name:</label>
 			<input id="foodName" name="foodName" type="text">
@@ -12,7 +15,7 @@
 		</form>
 	</body>
 </html>
-
+// after the form we have javalin main method and we also used the get method to get request from the server 
 public static void main(String[] args) {
 	Javalin app = Javalin.create();
 	app.start();
