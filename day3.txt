@@ -1,19 +1,21 @@
+// in this code the first part is run below and the later part is run furst as we can see the main method should be first and then the code can be run so 
+// we are creating a blueprint of the object by calling the public class 
 public class Food {
 	public String name;
 	public String type;
-
+// here we are using this keyword to metion the object in this method only 
 	public Food(String name, String type) {
 		this.name = name;
 		this.type = type;
 	}
-
+// we are using the if method to test if the name name does not contain  the word cooked then return "cooked +name. 
 	public void cook() {
 		if (!name.contains("cooked")) {
 			name = "cooked " + name;
 		}
 	}
 }
-
+// this is the main method below and we are creating a new object  Food 
 public class Main {
 	public static void main(String[] args) {
 		Food myFood = new Food("potato", "vegetable");
@@ -22,3 +24,4 @@ public class Main {
 		System.out.println(myFood.name);
 	}
 }
+// this code is a little bit messy i feel like and can be simplified 
